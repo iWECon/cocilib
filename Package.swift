@@ -5,11 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "cocilib",
-    pkgConfig: "ocilib",
     products: [
-          .library(name: "cocilib", targets: ["cocilib"])
+        .library(name: "cocilib", targets: ["cocilib"])
     ],
     targets: [
-        .target(name: "cocilib")
+        .systemLibrary(name: "cocilib")
     ]
 )
