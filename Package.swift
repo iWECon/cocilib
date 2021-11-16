@@ -9,6 +9,6 @@ let package = Package(
         .library(name: "cocilib", targets: ["cocilib"])
     ],
     targets: [
-        .systemLibrary(name: "cocilib")
+        .systemLibrary(name: "cocilib", pkgConfig: "ocilib")
     ]
 )
