@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "cocilib",
+    platforms: [
+        .macOS(.v11)
+    ],
     products: [
         .library(name: "cocilib", targets: ["cocilib"])
     ],
